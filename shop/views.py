@@ -41,16 +41,6 @@ def contact(request):
         return redirect('/')
     return render(request,'contact.html')
 
-# def Login(request):
-#     if request.method=="POST":
-#         username=request.POST.get('username', '')
-#         password=request.POST.get('password', '')
-#         auth = authenticate(username=username,password=password)
-#         auth.save()
-#         if User is not None:
-#             login(request, User)
-#
-#             return redirect('/')
 
 def Login(request):
     if request.method=="POST":
