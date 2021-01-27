@@ -35,10 +35,30 @@
                 <a class="nav-link" href="/contact/">Contact</a>
             </li>
 
+            {% if user.is_authenticated %}
+
+            <li class="nav-item" >
+                Hello,{{user.first_name}}
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="/logout/">Logout</a>
+            </li>
+
+            {% else %}
+            <li class="nav-item">
+                <a class="nav-link" href="/register/">Register</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="/Login/">Login</a>
+            </li>
+            {% endif %}
         </ul>
 
     </div>
 </nav>
+
 {% block body %} {% endblock %}
 
 <!-- Optional JavaScript -->
