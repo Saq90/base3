@@ -26,7 +26,7 @@ SECRET_KEY = '-ds8mel=^78gdd+mr+36$%*wd6d_702rx%_0p3-6u#yuh-avz7'
 DEBUG = False
 
 
-ALLOWED_HOSTS = ['127.0.0.1','cart-a.herokuapp.com']
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -124,7 +124,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS=[
-    os.path.join(BASE_DIR,'shop/static')
+    os.path.join(BASE_DIR,'static')
 ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
