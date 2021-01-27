@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '-ds8mel=^78gdd+mr+36$%*wd6d_702rx%_0p3-6u#yuh-avz7'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 
 ALLOWED_HOSTS = ['127.0.0.1','cart-a.herokuapp.com']
